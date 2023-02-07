@@ -1,0 +1,156 @@
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, #F77CEC 25%, #F79C59 70%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+.main-header {
+    background: #F79C5980;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-header {
+    padding-left: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    gap: 0px 25px;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 0px 45px;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px 25px;
+    width: 100vw;
+}
+
+.project2, .project3, .project4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px 25px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.project-img1 {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+}
+
+.project-img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+    width: 100vw;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 0px 40px;
+}
+
+ul {
+    list-style: none;
+  }
+
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  a:link, a:visited {
+    text-decoration: underline dotted;
+    color: #000000;
+  }
+
+  a:hover {
+    text-decoration: underline dotted;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    body, .main-header, main, .about, .portfolio, .project1, .project2, .project3, .project4, footer {
+      flex-direction: column;
+      display: block;
+    }
+  }
